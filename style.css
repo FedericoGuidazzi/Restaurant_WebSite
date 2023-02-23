@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 body{
     background-color: whitesmoke!important;
 }
@@ -6,9 +10,37 @@ body{
     border: none!important;
 }
 
+.navbar-nav>li{
+    text-align: right;
+    padding-right: 0.75rem;
+    border-top: 1px solid darkgray;
+}
+
+.navbar-nav>li>a:hover{
+    color: black;
+}
+
+
+.navbar-brand{
+    z-index: 1;
+}
+
+#imageDiv{
+    box-sizing: border-box;
+}
+
 @media(min-width: 900px){
     .navbar-nav>li>a:hover{
         border-bottom: 3px solid salmon;
         font-weight: bold;
     }
+
+    .navbar-nav>li{
+        padding: 0 10px;
+    }
+
+    .navbar-nav>li{
+        border: none;
+    }
+
 }
