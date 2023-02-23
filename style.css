@@ -1,0 +1,14 @@
+body{
+    background-color: whitesmoke!important;
+}
+
+.navbat-toggler{
+    border: none!important;
+}
+
+@media(min-width: 900px){
+    .navbar-nav>li>a:hover{
+        border-bottom: 3px solid salmon;
+        font-weight: bold;
+    }
+}
