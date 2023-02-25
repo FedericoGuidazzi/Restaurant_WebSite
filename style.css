@@ -1,5 +1,6 @@
 *{
     overflow-x: hidden;
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 body{
@@ -29,11 +30,54 @@ body{
     box-sizing: border-box;
 }
 
-@media(min-width: 900px){
+.lineaSeparazione>hr{
+    height: 1px;
+}
+
+#Menu{
+    width: 100%;
+}
+
+#Menu>div>p{
+    font-size: 1.5rem;
+}
+
+#Menu>div>div>a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 7px;
+    border: 2px solid black;
+}
+
+#Info{
+    text-align: center;
+    font-family: serif;
+}
+
+#About{
+    text-align: center;
+}
+
+footer>div:first-child{
+    text-align: center;
+}
+
+footer img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+@media(min-width: 992px){
     .navbar-nav>li>a:hover{
         border-bottom: 3px solid salmon;
-        font-weight: bold;
+        color: black;
     }
+
+    .navbar-nav>li>a{
+        border-bottom: 3px solid transparent;
+    }    
 
     .navbar-nav>li{
         padding: 0 10px;
@@ -43,4 +87,29 @@ body{
         border: none;
     }
 
+    #imageDiv>img{
+        max-width: 90%;
+    }
+
+    #Info{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #Info>div{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        padding-top: 15px;
+    }
+
+    footer div ul{
+        justify-content: center!important;
+    }
 }
