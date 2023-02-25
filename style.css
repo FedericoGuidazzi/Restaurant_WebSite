@@ -3,12 +3,32 @@
     font-family: Tahoma, Verdana, sans-serif;
 }
 
+.nascosto{
+    opacity: 0!important;
+    transition: all 1s!important;
+    left: -100%;
+}
+
+.positionRelative{
+    position: relative;
+}
+
+.show{
+    opacity: 1!important;
+    transition: 1s;
+    left: 0;
+}
+
 body{
     background-color: whitesmoke!important;
 }
 
 .navbat-toggler{
     border: none!important;
+}
+
+#imgIcon{
+    width: 25px!important;
 }
 
 .navbar-nav>li{
